@@ -29,9 +29,9 @@ Example :
 ```bash
   python -m glints_v2 1 36
 ```
-## Scraper Flow
+## Crawler Flow
 
-[Documentation](https://linktodocumentation)
+![image](https://user-images.githubusercontent.com/39428898/207851206-24854c8b-fdc1-4ed8-af77-7600b322b09a.png)
 
 
 ## Limitation
