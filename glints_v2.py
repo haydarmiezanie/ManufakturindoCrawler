@@ -45,7 +45,7 @@ def main(lower_limit, upper_limit):
         print("Page :", page)
 
         # Get item using this End Point
-        list_api    = f'https://glints.com/api/companies?limit=30&offset={page-1}&attributes=[%22id%22,%22logo%22,%22name%22,%22updatedAt%22,%22IndustryId%22,%22CountryCode%22,%22CityId%22]&include=[%7B%22association%22:%22Industry%22,%22attributes%22:[%22name%22]%7D,%7B%22association%22:%22Jobs%22,%22attributes%22:[%22id%22,%22status%22,%22isPublic%22,%22updatedAt%22]%7D,%7B%22association%22:%22City%22,%22attributes%22:[%22name%22]%7D,%7B%22association%22:%22Country%22,%22attributes%22:[%22name%22]%7D]&where=%7B%22status%22:%7B%22not%22:[%22REJECTED%22]%7D,%22name%22:%7B%22not%22:null%7D,%22CountryCode%22:%22ID%22%7D&order=magic'
+        list_api    = f'https://glints.com/api/companies?limit=30&offset={30*(page-1)}&attributes=[%22id%22,%22logo%22,%22name%22,%22updatedAt%22,%22IndustryId%22,%22CountryCode%22,%22CityId%22]&include=[%7B%22association%22:%22Industry%22,%22attributes%22:[%22name%22]%7D,%7B%22association%22:%22Jobs%22,%22attributes%22:[%22id%22,%22status%22,%22isPublic%22,%22updatedAt%22]%7D,%7B%22association%22:%22City%22,%22attributes%22:[%22name%22]%7D,%7B%22association%22:%22Country%22,%22attributes%22:[%22name%22]%7D]&where=%7B%22status%22:%7B%22not%22:[%22REJECTED%22]%7D,%22name%22:%7B%22not%22:null%7D,%22CountryCode%22:%22ID%22%7D&order=magic'
         get_id_list = crawler(list_api)
         get_list    = get_id_list['data']
 
