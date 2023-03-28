@@ -1,7 +1,7 @@
 
 # Read Me
 
-Glints Crawling is Crawler that aims data from Glints to xlsx, this scraper works in about 10 - 12 sec / page depends on the internet .
+Glints Crawling is Crawler that aims data from Glints to xlsx, this scraper works in about 3 - 5 sec / page depends on the internet .
 
 ## Run Locally
 
@@ -22,12 +22,12 @@ Install dependencies
 Start the scraper
 
 ```bash
-  python -m glints_v2 [start_page] [end_page]
+  python -m klikpajak [start_page] [end_page]
 ```
 Example :
 
 ```bash
-  python -m glints_v2 1 36
+  python -m klikalamat 1 266
 ```
 ## Crawler Flow
 
@@ -36,7 +36,7 @@ Example :
 
 ## Limitation
 
-This crawler is only example how to crawl data from Glints. This method work's very efficient.
+This crawler is only example how to crawl data from Klikalamat. This method work's very efficient.
 
 ## Authors
 
